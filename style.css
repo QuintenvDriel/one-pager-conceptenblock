@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        align-self: center;
+        width: 17rem;
+    }
+    nav.sticky {
+        display: flex;
+        align-self: center;
+        align-content: center;
+        width: 29rem;
+        height: 8rem;
+    }
+    section {
+        align-self: center;
+        align-content: center;
+        align-items: center;
+    }
+    section.title {
+        align-content: center;
+        width: 10px;
+    }
+    section.title h1 {
+        width: 16rem;
+        display: block;
+        align-content: center;
+
+    }
+    section.text {
+        width: 30rem;
+        align-content: center;
+        align-items: center;
+    }
+    section div p {
+        width: 17rem;
+        align-content: center;
+    }
+    footer{
+        align-content: center;
+        width: 30rem;
+    }
+}
+
+body {
+    background-color: #A3CDDA;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    padding-top: 100vh;
+    background-color: #FED3D4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    color:#F9F6EF;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:"Bebas Neue";
+    padding: 100px;
+
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    text-color: black;
+}
+
+
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Images*/
+
+img {
+    justify-content: right;
+    width: 38%;
+    height: 38%;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.imgWrapper{
+    display: flex;
+    justify-content: center;
+}
+.imgWrapper img{
+    heigth: 30rem;
+    width: 30rem;
+}
+
+.imgGallery{
+    display: flex;
+    justify-content: center;
+}
+
+.imgGallery img{
+    height: 20rem;
+    width: 17rem;
+
+
+}
+
+/*sections*/
+section.title {
+    background-color: #FED3D4;
+    margin-top: 250px;
+    width: 73%;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+}
+
+section.text {
+    color: black;
+    font-size: 20px;
+    margin-top: 25px auto;
+    line-height: 1,6;
+}
+
+section.text div {
+    background-color: #FFEEAA;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 50px;
+
+    overflow-wrap: break-word;
+    width: 75%;
+    margin: auto;
+}
+
+section.text div kop {
+    font-style: oblique;
+}
+p1 {
+    font-size: 20px;
+    font-style: italic;
+}
+bron {
+    font-size: 13px;
+    font-style: italic;
+    color: #00B282;
+}
+sideNote {
+    font-size: 13px;
+    font-style: italic;
+    color: #00B282;
+}
+
+
+
+/*citation*/
+.source {
+    font-size: 8px;
+}
+
+.source a {
+    text-decoration: none;
+    color: #BDB398;
+}
+
+/*navbar*/
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    position: absolute;
+    z-index: 10;
+}
+
+nav a {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:visited {
+    color: #000000;
+}
+
+nav div:hover a,
+nav div.selected a {
+    color: #000000;
+}
+
+nav div {
+    padding: 10px 0;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #FED3D4;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out;
+}
+
+nav div:hover,
+nav div.selected {
+    background-color: #A3CDDA;
+    color: #000000;
+}
+
+nav.sticky {
+    position: sticky;
+    top: 0rem;
+}
+
+
+
+
+footer {
+    background-color: #FED3D4;
+    height: 130px;
+    color: black;
+    font-weight: normal;
+    font-size: 1.2rem;
+
+
